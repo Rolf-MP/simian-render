@@ -18,7 +18,7 @@ def gui_init(meta_data: dict) -> dict:
     }
 
     # Add large label
-    label = component.HtmlElement("truck_label", truck_details_panel)
+    label = component.HtmlElement("header", form)
     label.tag = "h1"
     label.content = "Hatjiekidee!"
   
