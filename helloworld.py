@@ -3,9 +3,6 @@ from simian.gui import Form, component, component_properties, utils
 def gui_init(meta_data: dict) -> dict:
     """Create a form and set a logo and title."""
 
-    # Get application data containing secrets and configurables (local mode).
-    get_application_data(meta_data)
-
     # Create form.
     form = Form()
 
