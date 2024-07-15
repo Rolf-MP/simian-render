@@ -1,1 +1,3 @@
+--extra-index-url https://pypiserver.monkeyproofsolutions.nl/simple/
 fastapi[all]
+simian-gui
