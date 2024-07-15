@@ -9,13 +9,14 @@ from simian.entrypoint import entry_point
 
 app = FastAPI()
 @app.get('/health', response_class=JSONResponse)
-return dict(status="OK")
+async def status():
+    return dict(status="OK")
 
 @app.post('/', response_class=JSONResponse)
 def route_app_requests(request_data: list = Body()) -> dict:
     """Route requests to ballthrower GUI and return the response."""
     # Set the namespace that contains the GUI definition.
-    request_data[1].update({"namespace": "simian.examples.ballthrower"})
+    request_data[1].update({"namespace": "helloworld"})
 
     try:
         # Route the post to the entrypoint method.
