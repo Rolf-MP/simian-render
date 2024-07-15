@@ -23,7 +23,7 @@ def gui_init(meta_data: dict) -> dict:
     label.content = "Hatjiekidee!"
 
     # Create plot with some initial data
-    plot_obj_pie = component.Plotly("plot_pie", waypoints_panel)
+    plot_obj_pie = component.Plotly("plot_pie", form)
     plot_obj_pie.aspectRatio = 3
     plot_obj_pie.addCustomClass("plotly-custom", "fixed-bottom")
     update_plot_pie(plot_obj_pie)
