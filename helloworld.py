@@ -30,4 +30,4 @@ def gui_init(meta_data: dict) -> dict:
 def gui_event(meta_data: dict, payload: dict) -> dict:
     """Process the events."""
 
-  return payload
+    return payload
