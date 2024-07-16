@@ -1,3 +1,4 @@
+import getenv from os
 from typing import Optional
 # Use back-end type `python_fastapi` in the portal configuration.
 from fastapi import Body, FastAPI, Depends
@@ -9,8 +10,8 @@ import traceback
 from simian.entrypoint import entry_point
 
 api_keys = [
-    "akljnv13bvi2vfo0b0bw"
-]  # This is encrypted in the database
+    getenv('X_KEY')
+]
 
 app = FastAPI()
 
