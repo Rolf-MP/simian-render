@@ -1,4 +1,4 @@
-import getenv from os
+from os import getenv
 from typing import Optional
 # Use back-end type `python_fastapi` in the portal configuration.
 from fastapi import Body, FastAPI, Depends
