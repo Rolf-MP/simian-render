@@ -10,7 +10,7 @@ For evaluation purposes a shared Simian Portal is available.
 ## Simian Portal
 1. Complete registration at [Simian Demo Portal](https://demo02.simiansuite.com/).
 2. From your Render deployment, per steps below, take note of the `subdomain` of your backend deployment on `.onrender.com`
-3. Take note of the API Key (if configured in [main.py](main.py)).
+3. Take note of the API Key (if configured per instructions in [main.py](main.py)).
 5. Configure your app with Renderer as backend [here](https://demo02.simiansuite.com/configure_my_app/) by setting the onrender.com subdomain, and optionally the API Key.
 6. Start your Simian Web App via the [Simian Portal](https://demo02.simiansuite.com/) (you can bookmark the app link for direct access).
 
