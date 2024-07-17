@@ -23,10 +23,10 @@ API_KEY_AUTH_ENABLED = True
 # When API Key Authentication is enabled, it must be configured in Simian Portal and on the 
 # Backend Server (where the Python code is deployed).
 # SIMIAN Portal: configure API Key header name and value in Simian Portal under cURL options:
-# Add CURLOPT_HTTPHEADER of type array and add name:value. E.g. x-key:abcdefg
-API_KEY_HEADER_NAME = "x-key"
+# Add CURLOPT_HTTPHEADER of type array and add name:value. E.g. Simian-Api-Key:abcdefg
+API_KEY_HEADER_NAME = "Simian-Api-Key"
 # Backend Server: Configure API Key environment variable, on many platforms labeled "secret".
-API_KEY_ENV_VAR_NAME = "X_KEY"
+API_KEY_ENV_VAR_NAME = "SIMIAN_API_KEY"
 
 app = FastAPI()
 
