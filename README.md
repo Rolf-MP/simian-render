@@ -9,9 +9,9 @@ For evaluation purposes a shared Simian Portal is available. [Render](https://re
 ## Simian Portal
 1. Complete registration at [Simian Demo Portal](https://demo02.simiansuite.com/).
 2. From your Render deployment, per steps below, take note of the `subdomain` of your backend deployment on `.onrender.com`
-3. Take note of the API Key (if configured in your `main.py`).
-5. Configure your app with Renderer as backend [here](https://demo02.simiansuite.com/configure_my_app/) by setting the onrender.com subdomain, and optionally the API Key (see [main.py](main.py)).
-6. Start your Simian Web App via the [Simian Portal](https://demo02.simiansuite.com/) (you can bookmark the link for direct access).
+3. Take note of the API Key (if configured in [main.py](main.py)).
+5. Configure your app with Renderer as backend [here](https://demo02.simiansuite.com/configure_my_app/) by setting the onrender.com subdomain, and optionally the API Key.
+6. Start your Simian Web App via the [Simian Portal](https://demo02.simiansuite.com/) (you can bookmark the app link for direct access).
 
 Note: Simian Portal is intended to share apps with others and features app access management. On the evaluation Simian Portal access to your app is restricted to yourself.
 
@@ -29,7 +29,7 @@ Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://
 - FastAPI routing,  API key configuration and Simian Web app module configuration is done in `main.py`.
 - A simple Simian Web App example is provided in `helloworld.py`
 
-Note: If you fork this repository, you should modify the github project url in this readme.md to point to your organization and your repository.
+Note: If you fork this repository, you should modify the github project url in this `readme.md` to point to your organization and your repository.
 
 ## Manual Steps
 See https://render.com/docs/deploy-fastapi or follow the steps below:
