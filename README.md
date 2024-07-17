@@ -4,7 +4,7 @@ After developing and testing your Simian Web App locally, the next step is deplo
 1. Simian Portal configured to host your App
 2. A(ny) backend where your Simian Web App Python code is running as a web service
 
-For evaluation purposes a shared Simian Portal is available. [Render](https://render.com) allows for free deployment of Python code as a web service.
+For evaluation purposes a shared Simian Portal is available. [Render](https://render.com) allows for free deployment of Python code as a web service - directly from GitHub.
 
 ## Simian Portal
 1. Complete registration at [Simian Demo Portal](https://demo02.simiansuite.com/).
