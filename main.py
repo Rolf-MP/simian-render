@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 from fastapi.security import APIKeyHeader
 
 from simian.entrypoint import entry_point
+from simian.gui import utils
 
 # Hello world example of deployment of a Simian Web App using fastapi
 # In Simian Portal configure back-end type `python_fastapi`.
@@ -50,13 +51,8 @@ def route_app_requests(request_data: list = Body()) -> dict:
             request_data[2],
         )
 
-        # Defer loading the utils until the entry_point has checked that the
-        # framework can be used.
-#        from simian.gui import utils
-
         # Return the payload_out as a json string.
-#        response = {"returnValue": utils.payloadToString(payload_out)}
-        response = {"returnValue": payload_out}
+        response = {"returnValue": utils.payloadToString(payload_out)}
 
     except Exception as exc:
         logging.error('Error caught by entrypoint wrapper: %r', exc)
