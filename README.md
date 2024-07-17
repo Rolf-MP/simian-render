@@ -4,11 +4,11 @@ After developing and testing your Simian Web App locally, the next step is deplo
 1. Simian Portal configured to host your App
 2. A(ny) backend where your Simian Web App Python code is running as a web service
 
-For evaluation purposes a shared Simian Portal is available. Render allows for free deployment of Python code as a web service.
+For evaluation purposes a shared Simian Portal is available. [Render](https://render.com) allows for free deployment of Python code as a web service.
 
 ## Simian Portal
 1. Complete registration at [Simian Demo Portal](https://demo02.simiansuite.com/).
-2. From your Render deployment, per steps below, take note of the subdomain of your backend deployment on `onrender.com`
+2. From your Render deployment, per steps below, take note of the `subdomain` of your backend deployment on `.onrender.com`
 3. Take note of the API Key (if configured in your `main.py`).
 5. Configure your app with Renderer as backend [here](https://demo02.simiansuite.com/configure_my_app/) by setting the onrender.com subdomain, and optionally the API Key (see [main.py](main.py)).
 6. Start your Simian Web App via the [Simian Portal](https://demo02.simiansuite.com/) (you can bookmark the link for direct access).
