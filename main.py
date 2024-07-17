@@ -13,7 +13,7 @@ from simian.gui import utils
 # between Simian Portal and BAckend Server where the Python runs as FastAPI web service.
 # In Simian Portal configure back-end type `python_fastapi`.
 
-# SIMIAN_APP_NAMESPACE contains the implicit namespace where gui_init() and gui_event() are defined
+# SIMIAN_APP_NAMESPACE contains the namespace where gui_init() and gui_event() are defined
 # In this case "helloworld.py" next to this file. 
 # If helloworld.py is in a subfolder "demo" set SIMIAN_APP_NAMESPACE to "demo.helloworld"
 SIMIAN_APP_NAMESPACE = "helloworld"
