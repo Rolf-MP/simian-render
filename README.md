@@ -7,7 +7,7 @@ After developing and testing your Simian Web App locally, deployment to the web.
 For evaluation purposes, a shared Simian Evaluation Portal is readily available.  
 For deployment, [Render](https://render.com) offers convenient and free hosting Python code as a web service, directly from GitHub.
 
-# Simian Portal
+# Simian Evaluation Portal
 Publishing your Simian Web App:
 1. Sign up at [Simian Evaluation Portal](https://evaluate.simiansuite.com/).
 1. From your Render deployment (per steps [below](#render-fastapi-web-service-as-simian-web-app-backend)), take note of:  
