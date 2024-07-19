@@ -7,24 +7,20 @@ After developing and testing your Simian Web App locally, deployment to the web.
 For evaluation purposes, a shared Simian Evaluation Portal is readily available.  
 For deployment, [Render](https://render.com) offers convenient and free hosting Python code as a web service, directly from GitHub.
 
-## Simian Portal
-Publishing your Simian Web App
+# Simian Portal
+Publishing your Simian Web App:
 1. Sign up at [Simian Evaluation Portal](https://evaluate.simiansuite.com/).
 1. From your Render deployment (per steps [below](#render-fastapi-web-service-as-simian-web-app-backend)), take note of:  
   The `subdomain` of your backend deployment on `.onrender.com`  
   The API Key (if configured per instructions in [main.py](main.py)).
 1. In [Simian Evaluation Portal](https://evaluate.simiansuite.com/), configure and publish app [here](https://evaluate.simiansuite.com/configure_my_app/) by setting the onrender.com subdomain, and the (optional) API Key.
-1. Start your app via the [Simian Evaluation Portal](https://evaluate.simiansuite.com/) and bookmark the app link for direct access.
+1. Start your app via [Simian Evaluation Portal](https://evaluate.simiansuite.com/) and bookmark the app link for direct access.
 
 Note:  
-- Simian Portal supports app sharing and access management, but app access on the Evaluation Portal is restricted to yourself only and solely serves evaluation purposes.
-- Simian Portal works with a range of backend platforms. For evaluation purposes render.com has been chosen because of its convenient deployment path from code on GitHub to live FastAPI web service, its free offering, and because deplyed code remains under your control.
+- Simian Portal supports app sharing and access management, but app access on [Simian Evaluation Portal](https://evaluate.simiansuite.com/) is restricted to yourself only and solely serves evaluation purposes.
+- Simian Portal works with a range of backend platforms. For evaluation purposes render.com has been chosen because of its convenient deployment path from code on GitHub to a live FastAPI web service, its free offering, and because deployed code remains under your control.
 
-## Render FastAPI web service as Simian Web App backend
-Render provides a free option to deploy Python code as a FastAPI web service, making it perfect for testing the deployment of your Simian Web App.
-
-(deploy-to-render)=
-# Deploy to FastAPI web service on Render (#deploy-to-render)
+# Deploy to FastAPI web service on Render
 
 Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://fastapi.tiangolo.com) web service on Render.
 
@@ -33,8 +29,7 @@ Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://
 - FastAPI routing,  API key configuration and Simian Web app module configuration is done in `main.py`.
 - A simple Simian Web App example is provided in `helloworld.py`
 
-Note:
-- If you fork this repository, you should modify the github project url in this `readme.md` to point to your organization and your repository.
+_**If you fork this repository, you should modify the github project url in this `readme.md` to point to your organization and your repository.**_
 
 ## Manual Steps
 See https://render.com/docs/deploy-fastapi or follow the steps below:
