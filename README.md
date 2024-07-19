@@ -17,8 +17,10 @@ Publishing your Simian Web App:
 1. Start your app via [Simian Evaluation Portal](https://evaluate.simiansuite.com/) and bookmark the app link for direct access.
 
 Notes:  
-1. Simian Portal supports app sharing and access management, but app access on [Simian Evaluation Portal](https://evaluate.simiansuite.com/) is restricted to yourself only and solely serves evaluation purposes.
-1. Simian Portal works with a range of backend platforms. For evaluation purposes render.com has been chosen because of its convenient deployment path from code on GitHub to a live FastAPI web service, its free offering, and because deployed code remains under your control.
+1. Simian Portal supports app sharing and access management, but app access on [Simian Evaluation Portal](https://evaluate.simiansuite.com/) is restricted to yourself only and solely serves evaluation purposes.  
+   Contact us for Simian Portal hosting options.
+1. Simian Portal works with a range of backend platforms from docker to Azure, and other cloud providers.
+   For evaluation purposes render.com has been chosen because of its convenient deployment path from code on GitHub to a live FastAPI web service, its free entry offering and paid upgrade path, and last but not least because your code remains under your control.
 
 # Deploy to FastAPI web service on Render
 Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://fastapi.tiangolo.com) web service on Render.
@@ -29,6 +31,9 @@ Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://
 - A simple Simian Web App example is provided in `helloworld.py`
 
 _**If you fork this repository, you should modify the github project url in this `readme.md` under "Manual steps 1." and "Deploy to Render" button to point to your GitHub repository.**_
+
+Note:
+1. The free individual offering from render.com does spin down web services after some period of inactivity (15 minutes at the time of writing). When starting the Simian Web App after such period of inactivity it needs to be spinned up causing a delay of 1 minute or more. Consider upgrading to a paid render.com plan to avoid spinning down.
 
 ## Manual steps
 See https://render.com/docs/deploy-fastapi or follow the steps below:
