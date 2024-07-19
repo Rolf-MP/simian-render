@@ -30,7 +30,7 @@ Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://
 
 _**If you fork this repository, you should modify the github project url in this `readme.md` under "Manual Steps 1." and "Deploy to Render" button to point to your GitHub repository.**_
 
-## Manual Steps
+## Manual steps
 See https://render.com/docs/deploy-fastapi or follow the steps below:
 
 1. You may use this repository directly or [create your own repository from this template](https://github.com/Rolf-MP/simian-render/generate) if you'd like to customize the code.
@@ -45,7 +45,7 @@ See https://render.com/docs/deploy-fastapi or follow the steps below:
 
 6. Click Create Web Service.
 
-## Or Simply Click
+## Or simply click
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=(https://github.com/Rolf-MP/simian-render/))
 
