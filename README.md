@@ -10,7 +10,7 @@ For deployment, [Render](https://render.com) offers convenient and free hosting 
 ## Simian Portal
 Publishing your Simian Web App
 1. Sign up at [Simian Evaluation Portal](https://evaluate.simiansuite.com/).
-1. From your Render deployment (per steps [below](#deploy-to-render)), take note of:  
+1. From your Render deployment (per steps [below](#render-fastapi-web-service-as-simian-web-app-backend)), take note of:  
   The `subdomain` of your backend deployment on `.onrender.com`  
   The API Key (if configured per instructions in [main.py](main.py)).
 1. In [Simian Evaluation Portal](https://evaluate.simiansuite.com/), configure and publish app [here](https://evaluate.simiansuite.com/configure_my_app/) by setting the onrender.com subdomain, and the (optional) API Key.
