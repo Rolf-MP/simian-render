@@ -18,7 +18,7 @@ Publishing your Simian Web App:
 
 Notes:  
 1. Simian Portal supports app sharing and access management, but app access on [Simian Evaluation Portal](https://evaluate.simiansuite.com/) is restricted to yourself only and solely serves evaluation purposes.  
-   [Contact simiansuite.com](https://simiansuite.com/contact-us/) for Simian Portal cloud, and on-premises options.
+   Contact [simiansuite.com](https://simiansuite.com/contact-us/) for Simian Portal cloud, and on-premises options.
 1. Simian Portal works with a range of backend platforms from docker to Azure, and other cloud providers.
    For evaluation purposes render.com has been chosen because of its convenient deployment path from code on GitHub to a live FastAPI web service, its free entry offering and paid upgrade path, and last but not least because your code remains under your control.
 
