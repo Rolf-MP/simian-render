@@ -28,7 +28,7 @@ Use this repo as a Simian Web App template to deploy a Python [FastAPI](https://
 - FastAPI routing,  API key configuration and Simian Web app module configuration is done in `main.py`.
 - A simple Simian Web App example is provided in `helloworld.py`
 
-_**If you fork this repository, you should modify the github project url in this `readme.md` under "Manual Steps 1." and "Deploy to Render" button to point to your GitHub repository.**_
+_**If you fork this repository, you should modify the github project url in this `readme.md` under "Manual steps 1." and "Deploy to Render" button to point to your GitHub repository.**_
 
 ## Manual steps
 See https://render.com/docs/deploy-fastapi or follow the steps below:
