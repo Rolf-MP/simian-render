@@ -1,13 +1,10 @@
 from os import getenv
-import logging
-import traceback
 
 from fastapi import Body, FastAPI, Depends, HTTPException, status
 from fastapi.responses import JSONResponse
 from fastapi.security import APIKeyHeader
 
 from simian.entrypoint import entry_point_deploy
-from simian.gui import utils
 
 # Hello world example of deployment of a Simian Web App using fastapi, with API Key authentication 
 # between Simian Portal and BAckend Server where the Python runs as FastAPI web service.
