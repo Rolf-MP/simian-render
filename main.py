@@ -6,7 +6,7 @@ from fastapi import Body, FastAPI, Depends, HTTPException, status
 from fastapi.responses import JSONResponse
 from fastapi.security import APIKeyHeader
 
-from simian.entrypoint import entry_point
+from simian.entrypoint import entry_point_deploy
 from simian.gui import utils
 
 # Hello world example of deployment of a Simian Web App using fastapi, with API Key authentication 
@@ -48,27 +48,4 @@ else:
 @app.post(SIMIAN_APP_ROUTE, response_class=JSONResponse, dependencies=dependencies)
 def route_app_requests(request_data: list = Body()) -> dict:
     """Route requests to the Simian App code and return the response."""
-    # Set the Python namespace of the Simian App.
-    request_data[1].update({"namespace": SIMIAN_APP_NAMESPACE})
-
-    try:
-        # Route the post to the entrypoint method.
-        payload_out = entry_point(
-            request_data[0],
-            request_data[1],
-            request_data[2],
-        )
-
-        # Return the payload_out as a json string.
-        response = {"returnValue": utils.payloadToString(payload_out)}
-
-    except Exception as exc:
-        logging.error('Error caught by entrypoint wrapper: %r', exc)
-        response = {
-            "error": {
-                "message": str(exc),
-                "stacktrace": traceback.format_tb(exc.__traceback__)  # Optional
-            }
-        }
-
-    return response
+    return entry_point_deploy(SIMIAN_APP_NAMESPACE, request_data)
